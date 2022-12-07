@@ -6,6 +6,8 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    container:
+      image: ros:humble
     steps:
     - uses: actions/setup-python@v2
     - uses: actions/checkout@master
