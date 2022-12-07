@@ -2,8 +2,7 @@ import os
 import sys
 import re
 sys.path.insert(0, os.path.abspath('.'))
-sys.path.insert(0, os.path.abspath('./_user/python_interface/python_interface'))
-import python_interface
+sys.path.insert(0, os.path.abspath('./_user/temp_ws/src/python_interface/python_interface'))
 from sphinx.locale import _
 
 # Configuration file for the Sphinx documentation builder.
