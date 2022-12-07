@@ -55,7 +55,7 @@ templates_path = ['_templates']
 # This pattern also affects html_static_path and html_extra_path.
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 
-autodoc_mock_imports = ['as2_msgs', 'geographic_msgs']
+autodoc_mock_imports = ['as2_msgs', 'geographic_msgs', 'motion_reference_handlers']
 
 # -- Options for HTML output -------------------------------------------------
 
