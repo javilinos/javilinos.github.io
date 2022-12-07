@@ -8,8 +8,8 @@ Welcome to Javier Melero Deza's page!
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
-
+   
+   _user/index.rst
 
 
 Indices and tables
