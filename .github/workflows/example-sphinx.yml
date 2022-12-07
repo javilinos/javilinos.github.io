@@ -9,6 +9,9 @@ jobs:
     container:
       image: ros:latest
     steps:
+    - uses: actions/setup-python@v4
+      with:
+        python-version: '3.8'
     - uses: actions/checkout@master
       with:
         fetch-depth: 0 # otherwise, you will failed to push refs to dest repo
