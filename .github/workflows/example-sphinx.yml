@@ -7,7 +7,7 @@ jobs:
   build:
     runs-on: ubuntu-22.04
     container:
-      image: ros:humble-ros-base
+      image: ros:latest
     steps:
     - uses: actions/setup-python@v2
     - uses: actions/checkout@master
