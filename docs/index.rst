@@ -6,6 +6,11 @@
 Welcome to Javier Melero Deza's page!
 ==============================================
 
+User
+====
+
+:doc:`_user/index.rst`
+
 .. toctree::
    :maxdepth: 2
    
