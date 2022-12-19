@@ -1,10 +1,9 @@
+from sphinx.locale import _
 import os
 import sys
 import re
 sys.path.insert(0, os.path.abspath('.'))
-sys.path.insert(0, os.path.abspath('./_user/temp_ws/src/python_interface/python_interface'))
-import python_interface
-from sphinx.locale import _
+#sys.path.insert(0, os.path.abspath('./_user/temp_ws/src/python_interface/python_interface'))
 
 # Configuration file for the Sphinx documentation builder.
 #
@@ -55,7 +54,8 @@ templates_path = ['_templates']
 # This pattern also affects html_static_path and html_extra_path.
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 
-autodoc_mock_imports = ['as2_msgs', 'geographic_msgs', 'motion_reference_handlers']
+autodoc_mock_imports = ['as2_msgs',
+                        'geographic_msgs', 'motion_reference_handlers']
 
 # -- Options for HTML output -------------------------------------------------
 
@@ -72,9 +72,10 @@ except ImportError:
         '**': [
             'relations.html',  # needs 'show_related': True theme option to display
             'searchbox.html',
-            ]
-        }
-    sys.stderr.write('Warning: sphinx_rtd_theme missing. Use pip to install it.\n')
+        ]
+    }
+    sys.stderr.write(
+        'Warning: sphinx_rtd_theme missing. Use pip to install it.\n')
 else:
     html_theme = "sphinx_rtd_theme"
     html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
@@ -100,7 +101,7 @@ html_theme = 'sphinx_rtd_theme'
 html_static_path = ['_static']
 
 latex_documents = [
-  ('index', '{0}.tex'.format(slug), project, author, 'manual'),
+    ('index', '{0}.tex'.format(slug), project, author, 'manual'),
 ]
 
 man_pages = [
@@ -108,8 +109,9 @@ man_pages = [
 ]
 
 texinfo_documents = [
-  ('index', slug, project, author, slug, project, 'Miscellaneous'),
+    ('index', slug, project, author, slug, project, 'Miscellaneous'),
 ]
+
 
 def setup(app):
     from sphinx.domains.python import PyField
