@@ -23,7 +23,7 @@ jobs:
     - name: Build and Commit
       uses: javilinos/pages@v2
       with:
-        aerostack2_modules: [python_interface, as2_core]
+        aerostack2_modules: python_interface, as2_core
     - name: Push changes
       uses: ad-m/github-push-action@master
       with:
